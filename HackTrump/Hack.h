@@ -26,5 +26,7 @@ int GuessProduct(int GuessA, int GuessB, int GuessC, int GuessD, int GuessE);
 
 void Introduction();
 bool LevelOne(int LevelDifficulty = 1);
-
-//bool PlayGame();
+bool LevelTwo(int LevelDifficulty = 1);
+bool LevelThree(int LevelDifficulty = 1);
+void PlayGame();
+void Success();

@@ -83,26 +83,26 @@ int GuessProduct(int GuessA, int GuessB, int GuessC, int GuessD, int GuessE)
 }
 
 
-/*
-bool PlayerGuess()
+void PlayGame()
 {
-	
-	std::cout << SumAndProduct << std::endl;
-	std::cin >> GuessA >> GuessB >> GuessC;
-	std::cout << GuessA << GuessB << GuessC << std::endl;
-	
-	if (GuessSum == CodeSum && GuessProduct == CodeProduct)
-	{
-		std::cout << "Access Granted." << std::endl;
-		LevelDifficulty++;
-		return true;
+	bool bLevelOneComplete = LevelOne(1);
+	if (bLevelOneComplete) {
+		bool bLevelTwoComplete = LevelTwo(1);
+
+		if (bLevelOneComplete && bLevelTwoComplete)
+		{
+			bool bLevelThreeComplete = LevelThree(1);
+		}
 	}
 
-	else
-	{
-		std::cout << "Ha Ha, you dems will never get my things." << std::endl;
-		return false;
-	}
+
 }
 
-*/
+
+void Success()
+{
+	std::cout << "\nWell done agent! Thanks to your work, we not only rescued our agent but we have enough evidence to put Trump \n";
+	std::cout << "and his entire family behind bars for life.\n";
+	std::cout << "Be proud that you served your country and made the world a little better." << std::endl;
+}
+
